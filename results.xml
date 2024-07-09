@@ -1,0 +1,88 @@
+<testsuites id="" name="" tests="2" failures="2" skipped="0" errors="0" time="24.568991">
+<testsuite name="Training\basictest.spec.js" timestamp="2024-07-08T10:58:02.858Z" hostname="chromium" tests="2" failures="2" skipped="0" time="33.61" errors="0">
+<testcase name="test" classname="Training\basictest.spec.js" time="17.112">
+<failure message="basictest.spec.js:4:1 test" type="FAILURE">
+<![CDATA[  [chromium] › Training\basictest.spec.js:4:1 › test ───────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveURL(expected)
+
+    Locator: locator(':root')
+    Expected string: "https://demoblaze.com/index.html"
+    Received string: "about:blank"
+    Call log:
+      - expect.toHaveURL with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+
+
+      10 |
+      11 | //URL and Get the 
+    > 12 | await expect(page).toHaveURL('https://demoblaze.com/index.html');
+         |                    ^
+      13 | const pageUrl = page.url();
+      14 | console.log('pageUrl is:',pageUrl);
+      15 | });
+
+        at C:\Users\UDAY\Documents\powerplatform\tests\Training\basictest.spec.js:12:20
+]]>
+</failure>
+</testcase>
+<testcase name="test2" classname="Training\basictest.spec.js" time="16.498">
+<failure message="basictest.spec.js:17:1 test2" type="FAILURE">
+<![CDATA[  [chromium] › Training\basictest.spec.js:17:1 › test2 ─────────────────────────────────────────────
+
+    Error: Timed out 5000ms waiting for expect(locator).toHaveURL(expected)
+
+    Locator: locator(':root')
+    Expected string: "https://demo.nopecommerce.com/index.html"
+    Received string: "about:blank"
+    Call log:
+      - expect.toHaveURL with timeout 5000ms
+      - waiting for locator(':root')
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+      -   locator resolved to <html>…</html>
+      -   unexpected value "about:blank"
+
+
+      17 | test('test2',async({page}) => {
+      18 |
+    > 19 |     await expect(page).toHaveURL('https://demo.nopecommerce.com/index.html');
+         |                        ^
+      20 |     await expect(page).toHaveTitle('nonCommerce demo store');
+      21 |
+      22 | });
+
+        at C:\Users\UDAY\Documents\powerplatform\tests\Training\basictest.spec.js:19:24
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

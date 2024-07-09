@@ -1,0 +1,231 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\UDAY\\Documents\\powerplatform\\playwright.config.js",
+    "rootDir": "C:/Users/UDAY/Documents/powerplatform/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        null
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "C:\\Users\\UDAY\\Documents\\powerplatform\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "outputFolder": "my-allure-results"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/UDAY/Documents/powerplatform/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/UDAY/Documents/powerplatform/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/UDAY/Documents/powerplatform/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/UDAY/Documents/powerplatform/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/UDAY/Documents/powerplatform/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/UDAY/Documents/powerplatform/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Training\\basictest.spec.js",
+      "file": "Training/basictest.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 17112,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"https://demoblaze.com/index.html\"\u001b[39m\nReceived string: \u001b[31m\"about:blank\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"https://demoblaze.com/index.html\"\u001b[39m\nReceived string: \u001b[31m\"about:blank\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\n    at C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js:12:20",
+                    "location": {
+                      "file": "C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js",
+                      "column": 20,
+                      "line": 12
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m \u001b[90m//URL and Get the \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://demoblaze.com/index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mconst\u001b[39m pageUrl \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'pageUrl is:'\u001b[39m\u001b[33m,\u001b[39mpageUrl)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js",
+                        "column": 20,
+                        "line": 12
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"https://demoblaze.com/index.html\"\u001b[39m\nReceived string: \u001b[31m\"about:blank\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 10 |\u001b[39m\n \u001b[90m 11 |\u001b[39m \u001b[90m//URL and Get the \u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://demoblaze.com/index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mconst\u001b[39m pageUrl \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39murl()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[32m'pageUrl is:'\u001b[39m\u001b[33m,\u001b[39mpageUrl)\u001b[33m;\u001b[39m\n \u001b[90m 15 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js:12:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-08T10:58:03.633Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js",
+                    "column": 20,
+                    "line": 12
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cece415cb20b1c118e86-8f69c9b7bd4566a57cc2",
+          "file": "Training/basictest.spec.js",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "test2",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 16498,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"https://demo.nopecommerce.com/index.html\"\u001b[39m\nReceived string: \u001b[31m\"about:blank\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"https://demo.nopecommerce.com/index.html\"\u001b[39m\nReceived string: \u001b[31m\"about:blank\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\n    at C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js:19:24",
+                    "location": {
+                      "file": "C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js",
+                      "column": 24,
+                      "line": 19
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m'test2'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://demo.nopecommerce.com/index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'nonCommerce demo store'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js",
+                        "column": 24,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator(':root')\nExpected string: \u001b[32m\"https://demo.nopecommerce.com/index.html\"\u001b[39m\nReceived string: \u001b[31m\"about:blank\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveURL with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator(':root')\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\u001b[2m  -   locator resolved to <html>…</html>\u001b[22m\n\u001b[2m  -   unexpected value \"about:blank\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 17 |\u001b[39m test(\u001b[32m'test2'\u001b[39m\u001b[33m,\u001b[39m\u001b[36masync\u001b[39m({page}) \u001b[33m=>\u001b[39m {\n \u001b[90m 18 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m'https://demo.nopecommerce.com/index.html'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveTitle(\u001b[32m'nonCommerce demo store'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m\n \u001b[90m 22 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js:19:24\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-07-08T10:58:03.590Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\UDAY\\Documents\\powerplatform\\tests\\Training\\basictest.spec.js",
+                    "column": 24,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cece415cb20b1c118e86-5f69b7b39b7e2504e76c",
+          "file": "Training/basictest.spec.js",
+          "line": 17,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-07-08T10:58:02.720Z",
+    "duration": 24568.991,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
